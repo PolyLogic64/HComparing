@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLoadFolder = new System.Windows.Forms.Button();
+            this.folderLocation = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.ModelsComboBox = new System.Windows.Forms.ComboBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
+            this.ModelSettingsBox = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnLoadFolder
             // 
-            this.button1.Location = new System.Drawing.Point(23, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Load Folder";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLoadFolder.Location = new System.Drawing.Point(23, 54);
+            this.btnLoadFolder.Name = "btnLoadFolder";
+            this.btnLoadFolder.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadFolder.TabIndex = 0;
+            this.btnLoadFolder.Text = "Load Folder";
+            this.btnLoadFolder.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // folderLocation
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 20);
-            this.textBox1.TabIndex = 1;
+            this.folderLocation.Location = new System.Drawing.Point(23, 28);
+            this.folderLocation.Name = "folderLocation";
+            this.folderLocation.ReadOnly = true;
+            this.folderLocation.Size = new System.Drawing.Size(341, 20);
+            this.folderLocation.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
@@ -60,56 +61,57 @@
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 167);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(756, 214);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(756, 242);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(23, 388);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(756, 23);
-            this.progressBar1.TabIndex = 3;
+            this.progressBar.Location = new System.Drawing.Point(23, 415);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(756, 23);
+            this.progressBar.TabIndex = 3;
             // 
-            // comboBox1
+            // ModelsComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ModelsComboBox.FormattingEnabled = true;
+            this.ModelsComboBox.Items.AddRange(new object[] {
             "Hash",
             "Scale-Down",
             "Difference",
             "Machine Learning"});
-            this.comboBox1.Location = new System.Drawing.Point(370, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Select A Model";
+            this.ModelsComboBox.Location = new System.Drawing.Point(370, 28);
+            this.ModelsComboBox.Name = "ModelsComboBox";
+            this.ModelsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ModelsComboBox.TabIndex = 4;
+            this.ModelsComboBox.Text = "Select A Model";
             // 
-            // button2
+            // btnStart
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(669, 118);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 43);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Start";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(669, 118);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(109, 43);
+            this.btnStart.TabIndex = 5;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnInfo
             // 
-            this.button3.Location = new System.Drawing.Point(497, 28);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(42, 21);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Info";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInfo.Location = new System.Drawing.Point(497, 28);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(42, 21);
+            this.btnInfo.TabIndex = 6;
+            this.btnInfo.Text = "Info";
+            this.btnInfo.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // ModelSettingsBox
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(271, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(392, 100);
-            this.panel1.TabIndex = 7;
+            this.ModelSettingsBox.Location = new System.Drawing.Point(317, 61);
+            this.ModelSettingsBox.Name = "ModelSettingsBox";
+            this.ModelSettingsBox.Size = new System.Drawing.Size(346, 100);
+            this.ModelSettingsBox.TabIndex = 7;
+            this.ModelSettingsBox.TabStop = false;
+            this.ModelSettingsBox.Text = "Model Settings";
             // 
             // Form1
             // 
@@ -117,14 +119,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.ModelSettingsBox);
+            this.Controls.Add(this.btnInfo);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.ModelsComboBox);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.folderLocation);
+            this.Controls.Add(this.btnLoadFolder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -137,14 +139,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLoadFolder;
+        private System.Windows.Forms.TextBox folderLocation;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.ComboBox ModelsComboBox;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.GroupBox ModelSettingsBox;
     }
 }
 
