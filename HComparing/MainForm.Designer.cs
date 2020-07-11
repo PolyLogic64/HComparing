@@ -42,6 +42,7 @@
             this.HelpBox = new System.Windows.Forms.Panel();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.btnSettings = new System.Windows.Forms.Button();
+            this.btnLoadFiles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLoadFolder
@@ -83,11 +84,6 @@
             // ModelsComboBox
             // 
             this.ModelsComboBox.FormattingEnabled = true;
-            this.ModelsComboBox.Items.AddRange(new object[] {
-            "Hash",
-            "Scale-Down",
-            "Difference",
-            "Machine Learning"});
             this.ModelsComboBox.Location = new System.Drawing.Point(370, 28);
             this.ModelsComboBox.Name = "ModelsComboBox";
             this.ModelsComboBox.Size = new System.Drawing.Size(121, 21);
@@ -118,6 +114,7 @@
             this.btnInfo.TabStop = false;
             this.btnInfo.Text = "Info";
             this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // ModelSettingsBox
             // 
@@ -169,12 +166,26 @@
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
+            // btnLoadFiles
+            // 
+            this.btnLoadFiles.Enabled = false;
+            this.btnLoadFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadFiles.Location = new System.Drawing.Point(139, 107);
+            this.btnLoadFiles.Name = "btnLoadFiles";
+            this.btnLoadFiles.Size = new System.Drawing.Size(109, 43);
+            this.btnLoadFiles.TabIndex = 12;
+            this.btnLoadFiles.TabStop = false;
+            this.btnLoadFiles.Text = "Load Files";
+            this.btnLoadFiles.UseVisualStyleBackColor = true;
+            this.btnLoadFiles.Click += new System.EventHandler(this.btnLoadFiles_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLoadFiles);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.HelpBox);
             this.Controls.Add(this.checkBoxExpertMode);
@@ -213,6 +224,7 @@
         private System.Windows.Forms.Panel HelpBox;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Button btnLoadFiles;
     }
 }
 

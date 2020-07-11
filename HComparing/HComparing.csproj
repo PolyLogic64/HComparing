@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoWindow.Designer.cs">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,7 +59,6 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Hash.cs" />
-    <Compile Include="ModelSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsWindow.cs">
@@ -62,6 +67,9 @@
     <Compile Include="SettingsWindow.Designer.cs">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InfoWindow.resx">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
