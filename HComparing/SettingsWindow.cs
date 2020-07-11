@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace HComparing
 {
-    public partial class Form1 : Form
+    public partial class SettingsWindow : Form
     {
-        public Form1()
+        public SettingsWindow()
         {
             InitializeComponent();
         }
-
-
     }
 }
